@@ -1,0 +1,50 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+.universe-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('universe.jpg') no-repeat center center fixed; 
+    background-size: cover;
+    animation: universeAnimation 20s linear infinite;
+}
+
+@keyframes universeAnimation {
+    from {background-position: 0 0;}
+    to {background-position: 100% 100%;}
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#catContainer {
+    margin-top: 20px;
+}
+
+#catImage {
+    max-width: 100%;
+    max-height: 400px;
+}
